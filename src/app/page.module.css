@@ -1,0 +1,100 @@
+#mainContainer {
+  margin: 2rem;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: space-around;
+  max-height: calc(100vh - 4rem);
+}
+
+#topSection {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+#formContainer {
+  margin: 1rem;
+  width: calc(50vw - 2rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#formContainer form {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: calc(50vw - 4rem);
+}
+
+#formContainer form label {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Align items vertically centered */
+  justify-content: space-between; /* Distribute space between label content and input */
+}
+
+#formContainer form label span {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 15rem;
+  margin-right: 0.5rem;
+}
+
+#formContainer form label span::after {
+  align-items: left;
+  margin-right: 0.5rem;
+}
+
+#formContainer form label input {
+  margin-left: 2rem;
+  flex: 1; /* Take up remaining horizontal space */
+}
+
+#formContainer form label select {
+  margin-left: 2rem;
+  flex: 1; /* Take up remaining horizontal space */
+}
+
+#formContainer button {
+  align-self: flex-end;
+  width: 10rem;
+  height: 2rem;
+}
+
+#balanceSheetContainer {
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+  max-height: 80vh;
+  width: calc(50vw - 2rem);
+  align-items: center;
+  justify-content: center;
+}
+
+#balanceSheetContainer section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+  overflow-y: scroll;
+  width: calc(50vw - 4rem);
+}
+
+#balanceSheetContainer .balanceItem {
+  flex-basis: calc(50% - 1rem);
+  margin: 0.5rem;
+}
+
+#bottomSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bottomSection button {
+  width: 10rem;
+  height: 2rem;
+}
